@@ -16,12 +16,16 @@ class MyApp extends StatelessWidget {
           title: const Text('Projeto Git'),
           titleTextStyle: const TextStyle(color: Colors.white, fontSize: 30),
         ),
-        body: Container(),
-        bottomNavigationBar: BottomAppBar(
-          color: Color.fromARGB(255, 73, 72, 72),
-          height: 60,
-          child: Container(),
+        body: Center(
+          child: Text('conteúdo principal'),
         ),
+
+
+        bottomNavigationBar: BottomAppBar(
+          child: Icon(Icons.home),a
+        ),
+
+
         drawer: Drawer(
           backgroundColor: Colors.white,
           child: ListView(
