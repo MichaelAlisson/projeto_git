@@ -19,28 +19,28 @@ class MyApp extends StatelessWidget {
         body: const Center(
           child: Text('conteúdo principal'),
         ),
-        bottomNavigationBar:  BottomNavigationBar( 
-          items: [ 
+        bottomNavigationBar: BottomNavigationBar(
+          items: [
             // Adicione os itens da lista aqui
-            BottomNavigationBarItem (
+            BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Início', // Etiqueta opcional
-              backgroundColor: Colors.blue,
+              backgroundColor: Color.fromARGB(255, 73, 72, 72),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search),
               label: 'Pesquisa', // Etiqueta opcional
-              backgroundColor: Colors.blue,
+              backgroundColor: Color.fromARGB(255, 73, 72, 72),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.favorite),
               label: 'Favoritos', // Etiqueta opcional
-              backgroundColor: Colors.blue,
+              backgroundColor: Color.fromARGB(255, 73, 72, 72),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
               label: 'Perfil', // Etiqueta opcional
-              backgroundColor: Colors.blue,
+              backgroundColor: Color.fromARGB(255, 73, 72, 72),
             ),
           ],
         ),
