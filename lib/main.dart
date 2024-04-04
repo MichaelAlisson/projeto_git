@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
           titleTextStyle: const TextStyle(color: Colors.white, fontSize: 30),
         ),
         body: Container(),
+        bottomNavigationBar: BottomAppBar(
+          
+        ),
         drawer: Drawer(
           backgroundColor: Colors.white,
           child: ListView(
