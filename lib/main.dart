@@ -15,20 +15,10 @@ class MyApp extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 46, 45, 45),
           title: const Text('Projeto Git'),
           titleTextStyle: const TextStyle(color: Colors.white, fontSize: 30),
-          leading: Builder(
-            // Garantindo o contexto correto
-            builder: (context) => GestureDetector(
-              // Detectando o toque
-              onTap: () => Scaffold.of(context).openDrawer(),
-              child: Container(
-                child: Icon(Icons.menu),
-                color: const Color.fromARGB(255, 46, 45, 45),
-              ),
-            ),
-          ),
         ),
+        body: Container(),
         drawer: Drawer(
-          backgroundColor: Colors.white70,
+          backgroundColor: Colors.white,
           child: ListView(
             padding:
                 EdgeInsets.zero, //REMOVER O PREENCHIMENTO AO REDOR DA LISTA
@@ -38,12 +28,16 @@ class MyApp extends StatelessWidget {
                 child: DrawerHeader(
                   child: Text(
                     'Menu',
-                    style: TextStyle(fontSize: 24),
+                    style: TextStyle(fontSize: 24, color: Colors.black),
                   ),
                 ),
               ),
               ListTile(
                   title: Text('Configurações'), leading: Icon(Icons.settings)),
+              ListTile(
+                title: Text('Sair do aplicativo'),
+                leading: Icon(Icons.exit_to_app),
+              ),
             ],
           ),
         ),
