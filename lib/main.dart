@@ -16,16 +16,34 @@ class MyApp extends StatelessWidget {
           title: const Text('Projeto Git'),
           titleTextStyle: const TextStyle(color: Colors.white, fontSize: 30),
         ),
-        body: Center(
+        body: const Center(
           child: Text('conteúdo principal'),
         ),
-
-
-        bottomNavigationBar: BottomAppBar(
-          child: Icon(Icons.home),a
+        bottomNavigationBar:  BottomNavigationBar( 
+          items: [ 
+            // Adicione os itens da lista aqui
+            BottomNavigationBarItem (
+              icon: Icon(Icons.home),
+              label: 'Início', // Etiqueta opcional
+              backgroundColor: Colors.blue,
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: 'Pesquisa', // Etiqueta opcional
+              backgroundColor: Colors.blue,
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite),
+              label: 'Favoritos', // Etiqueta opcional
+              backgroundColor: Colors.blue,
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Perfil', // Etiqueta opcional
+              backgroundColor: Colors.blue,
+            ),
+          ],
         ),
-
-
         drawer: Drawer(
           backgroundColor: Colors.white,
           child: ListView(
