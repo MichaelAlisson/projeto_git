@@ -12,13 +12,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 46, 45, 45),
+          backgroundColor: Color.fromARGB(255, 73, 72, 72),
           title: const Text('Projeto Git'),
           titleTextStyle: const TextStyle(color: Colors.white, fontSize: 30),
         ),
         body: Container(),
         bottomNavigationBar: BottomAppBar(
-          
+          color: Color.fromARGB(255, 73, 72, 72),
+          height: 60,
+          child: Container(),
         ),
         drawer: Drawer(
           backgroundColor: Colors.white,
